@@ -1,0 +1,41 @@
+.container{
+  height: 200vh;
+  
+}
+.demo{
+    background-color: rgb(8, 168, 221);
+    font-size: 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 140px;
+}
+.child{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.nav{
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(255, 255, 0, 0.832);
+  top: 0;
+    width: 100vw;
+    height: 2vh;
+}
+.box{
+  height: 100vh;
+  border: 4px solid yellow;
+}
+.sticky{
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  position: sticky;
+  top: 20vh;
+}
