@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    :root {
+      --primary-color: blue;
+      --border-radius: 20px;
+      --bg-color: yellow;
+    }
+    button:focus {
+      outline: 2px solid blue;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 50px;
+    }
+    .bg-black {
+      background-color: black;
+    }
+    .box {
+      /* border: 2px solid black; */
+      width: 200px;
+      border-radius: var(--border-radius);
+      height: 200px;
+      background-color: var(--bg-color);
+    }
+    body {
+      background-color: purple;
+    }
+    h1 {
+      background-color: rgb(19, 233, 8);
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      body {
+        background-color: blue;
+      }
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      body {
+        background-color: green;
+      }
+    }
+  </style>
+  <body>
+    <h1>helo</h1>
+    <button class="button">click me</button>
+    <div class="container">
+      <div class="box">mybox 1</div>
+      <div class="box">mybox 2</div>
+      <div class="box">mybox 3</div>
+      <div class="box">mybox 4</div>
+      <div class="box">mybox 5</div>
+      <div class="box">mybox 6</div>
+      <div class="box">mybox 7</div>
+      <div class="box">mybox 8</div>
+      <div class="box">mybox 9</div>
+      <div class="box">mybox 10</div>
+    </div>
+  </body>
+</html>
